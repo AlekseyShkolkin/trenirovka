@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:tren/laod.dart';
+import './laod.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,8 +24,6 @@ class MyAppState extends State<MyApp> {
         primaryColor: Color.fromRGBO(254, 207, 5, 1),
         accentColor: Color.fromRGBO(254, 168, 5, 1),
         indicatorColor: Color.fromRGBO(103, 76, 215, 1),
-        // accentColor: Color.fromRGBO(54, 24, 175, 1),
-        // accentColor: Color.fromRGBO(54, 24, 175, 1),
       ),
       home: Load(),
     );

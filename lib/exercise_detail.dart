@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tren/dbhelper_day.dart';
-import 'package:tren/model_day.dart';
+import './dbhelper_day.dart';
+import './model_day.dart';
+import 'package:flutter/material.dart';
 
 class ExerciseForm extends StatefulWidget {
   final Day day;
