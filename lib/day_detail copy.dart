@@ -1012,11 +1012,11 @@ class DayDetailState extends State<DayDetail> {
                                     );
                                   }).toList(),
                                   style: textStyle,
-                                  value:,
+                                  value: day.numbAppr1,
                                   onChanged: (String value) {
                                     focusNode5.requestFocus();
-                                    setState(() {  day.numbAppr1 = value; day.numbAppr1 = numbApprController1;});
-                                  
+                                    setState(() {});
+                                    day.numbAppr1 = value;
                                   },
                                 ),
                               ),
@@ -1067,9 +1067,8 @@ class DayDetailState extends State<DayDetail> {
                                   value: day.numbRepit1,
                                   onChanged: (String value) {
                                     focusNode6.requestFocus();
-                                    setState(() {day.numbRepit1 = value;
-                                    day.numbRepit1 = numbRepitController1;});
-                                    
+                                    setState(() {});
+                                    day.numbRepit1 = value;
                                   },
                                 ),
                               ),
@@ -1576,7 +1575,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -1990,7 +1992,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -2404,7 +2409,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -2818,7 +2826,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -3232,7 +3243,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -3646,7 +3660,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -4060,7 +4077,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -4474,7 +4494,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -4888,7 +4911,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -5302,7 +5328,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
@@ -5716,7 +5745,10 @@ class DayDetailState extends State<DayDetail> {
                                       ),
                                       onPressed: () {
                                         if (!_isTimerRunning) {
-                                          _startInitialTimer(); // Запускаем предварительный таймер
+                                          _startTimer();
+                                          setState(() {
+                                            _isTimerRunning = true;
+                                          });
                                         }
                                       },
                                       child: Text(
